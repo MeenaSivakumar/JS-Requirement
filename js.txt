@@ -1,0 +1,26 @@
+25.11.24
+
+UnDOAT
+understand design Optimize approach test
+
+understand
+goal - prepare bill obj, update stock
+
+Input 
+
+cutomer details
+books choosen by customer
+discount details
+List of book &cutomers 
+
+output
+
+bill{
+customer name:
+bookspurchased:[{}]
+totprice:
+totdis:
+}
+
+Design
+

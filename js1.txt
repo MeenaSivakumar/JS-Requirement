@@ -1,0 +1,57 @@
+15.11.24
+JavaScript
+
+scripting - writing own code one by one
+scripting lang.slow,complex.
+vanilla js
+  without any external lib , plain JavaScript lang(react,angluar). fast,used for small proj, easy.
+ jQuery.
+   To simplify js.
+   DOM - represents browser. its helpful to      interact with element of browser.
+
+
+Js containers:
+contains group of objects
+
+1.var is a container which stores grp of objects.
+  var containername = "value";
+
+2.let
+3.const
+
+scopes:
+global
+block - using let & const inside the if,for,while,switch.
+function
+
+hoisting takes from bottom to top 
+it works only in var. variable can be declared first then initialized.
+
+let behave likes var but it dosent use hosting.
+
+const - once assigned cant assign value again 
+
+Datatypes
+
+String
+array
+obj
+Boolean
+null
+undefined
+number
+
+diff null and undefined- not initialize.
+null - to create an empty obj.
+ 
+var a; 
+var a = null;
+
+
+map - for selecting corresponding property
+based on given key splits memory
+pushing method - set
+
+set - removes values by duplicate key 
+pushing method - add
+
