@@ -65,10 +65,12 @@ function calculateDiscount(customerChosenList){
             }
         }
     }
-    return customerChosenList;
+    console.log(customerChosenList);
+    calculatePrice(customerChosenList,currentCustomer);
+    
 }
 
-function  calculatePrice(customerChosenList){
+function  calculatePrice(customerChosenList,currentCustomer){
     let totalDiscount = 0;
     let totalPrice = 0;
   
@@ -79,6 +81,7 @@ function  calculatePrice(customerChosenList){
         }
     console.log();
     console.log("Bill:");
+    console.log("customer Name:",currentCustomer.customerName);
     console.log(customerChosenList);
     console.log("totalDiscount:",totalDiscount);
     console.log("totalDiscount:",totalPrice);
@@ -92,7 +95,7 @@ function genrateBill(){
     const customerChosenList = filterChosenBooks(uniqueBooksList);
     console.log(customerChosenList);
     calculateDiscount(customerChosenList);
-    calculatePrice(customerChosenList);
+    
     
     
 }
