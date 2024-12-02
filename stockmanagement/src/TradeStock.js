@@ -5,23 +5,7 @@ export const TradeStock = (props)=>{
         const [amount, setBalance] = useState(0);
         const [tradeType, setType] = useState();
       
-        const handleChange = (value) => {
-          console.log(value);
-          if (value > 0) {
-            setBalance(value);
-          }
-        };
-      
-        const handleSubmit = (e) => {
-          e.preventDefault();
-          if (tradeType === "Buy" && props.balance >= amount) {
-            props.updateBalance(props.balance - amount);
-          } else if (tradeType === "Sell") {
-            props.updateBalance(props.balance + amount);
-          } else {
-            alert("Insufficient balance");
-          }
-        };
+        
     
       
         return (
@@ -29,7 +13,7 @@ export const TradeStock = (props)=>{
               <Card>
                 <Card.Body>
                   <Card.Text>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={{}}>
                       <div>
                         <Form.Label htmlFor="inputPassword5">Symbol</Form.Label>
                        
@@ -44,7 +28,7 @@ export const TradeStock = (props)=>{
                         <Form.Select
                           aria-label="Default select example"
                           value={tradeType}
-                          onChange={(e) => setType(e.target.value)}
+                          onChange={()=>{}}
                         >
                           <option>Please Select</option>
                           <option value="Buy">Buy</option>
