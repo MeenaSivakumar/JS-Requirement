@@ -23,10 +23,10 @@ function App() {
    </Navbar>
 
     <PortfolioSummary summary ={summaryDetails}/>
-    <PortfolioDetails/>
-    <StockList/>
-    <TradeStock/>
     
+    <StockList/>
+    <TradeStock balance = {summaryDetails.cashBalance}  stockCount = {summaryDetails.noOfStockOwned}/>
+    <PortfolioDetails/>
     </div>
   );
 }
